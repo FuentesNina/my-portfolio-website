@@ -69,7 +69,10 @@ header {
     width: 100%;
 }
  /* Mobile Menu*/
- @media screen and (max-width: 740px) {
+ @media screen 
+    and (min-device-width: 320px)
+    and (max-device-width: 480px) 
+    and (-webkit-min-device-pixel-ratio: 2) {
     .header-desktop {
         display: none;
     }
