@@ -73,6 +73,7 @@ div.portrait {
     align-items: flex-end;
     justify-content: flex-start;
     animation: transitionInPortrait 2s;
+
 }
 
 div.portrait img {
