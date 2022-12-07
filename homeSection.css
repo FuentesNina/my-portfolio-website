@@ -82,7 +82,10 @@ div.portrait img {
 }
 
 /* Mobile Layout */
-@media screen and (max-width: 740px) {
+@media screen 
+    and (min-device-width: 320px)
+    and (max-device-width: 480px) 
+    and (-webkit-min-device-pixel-ratio: 2) {
     section.home {
         background: linear-gradient(white, var(--dark-blue));
         display: inline-block;
