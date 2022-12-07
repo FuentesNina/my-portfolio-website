@@ -2,7 +2,7 @@
 const header = document.querySelector('header');
 const homeSection = document.querySelector("section.home");
 
-const homeSectionOptions = {rootMargin: "-200px 0px 0px 0px"};
+const homeSectionOptions = {rootMargin: "-500px 0px 0px 0px"};
 
 const homeSectionObserver = new IntersectionObserver(function(entries, navObserver) {
     entries.forEach(entry => {
