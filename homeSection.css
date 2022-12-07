@@ -51,7 +51,7 @@ div.intro {
 div.portrait {
     display: flex;
     align-items: flex-end;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 div.portrait img {
