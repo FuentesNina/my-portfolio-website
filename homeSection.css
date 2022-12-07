@@ -1,3 +1,5 @@
+/* Desktop Layout */
+
 section.home {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -14,6 +16,25 @@ div.intro {
 
 .home h1 {
     font-size: 64px;
+    text-shadow: var(--pink) 1px 0 10px;
+
+}
+
+.home h1.mobile {
+    display: none;
+}
+
+span.letter, span.space {
+    margin: 0 -10px 0 -5px;
+    transition: all 0.3s;
+}
+
+span.space {
+    margin: 0 10px;
+}
+
+.letter:hover {
+    font-size: 100px;
 }
 
 .home p {
@@ -34,31 +55,33 @@ div.intro {
     align-self: flex-start;
     border-style: solid;
     font-weight: 600;
+    transition: all .5s ease-out;
+    animation: BlinkingButton 2s infinite;
+    animation-delay: 3s;
 }
 
 .intro button:hover {
-    border-color: white;
+    border-color: none;
     color: white;
     background-color: var(--pink);
-    border-radius: 25px;
-    font-size: 18px;
-    padding: 0.5em;
-    padding-left: 1em;
-    padding-right: 1em;
-    align-self: flex-start;
+    animation: none;
+
 }
 
 div.portrait {
     display: flex;
     align-items: flex-end;
     justify-content: flex-start;
+    animation: transitionInPortrait 2s;
+
 }
 
 div.portrait img {
     height: 85vh;
+
 }
 
-
+/* Mobile Layout */
 @media screen and (max-width: 740px) {
     section.home {
         background: linear-gradient(white, var(--dark-blue));
@@ -73,6 +96,11 @@ div.portrait img {
     }
 
     .home h1 {
+        display:  none;
+    }
+
+    .home h1.mobile {
+        display: flex;
         font-size: 40px;
         text-align: center;
     }
@@ -85,21 +113,44 @@ div.portrait img {
     }
 
     div.portrait {
-        flex: 1;
-        align-items: flex-end;
+        justify-content:center;
         height: 65%;
     }
 
     div.portrait img {
         height: 100%;
     }
+}
 
-    .intro button {
-        align-self: center;
+
+/* Animations */
+
+@keyframes transitionInPortrait {
+    from {
+        opacity: 0;
+        transform:translate(50%);
     }
 
-    .intro button:hover {
-        align-self: center;
+    to {
+        opacity: 1;
+        transform:translate(0);
     }
+}
 
+@keyframes BlinkingButton {
+    0% {
+        border-color: var(--pink);
+        color: var(--pink);
+        background-color: transparent;
+    }
+    50% {
+        border-color: none;
+        color: white;
+        background-color: var(--pink);
+    }
+    100% {
+        border-color: var(--pink);
+        color: var(--pink);
+        background-color: transparent;
+    }
 }
