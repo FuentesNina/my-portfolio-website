@@ -2,53 +2,105 @@
 <html>
 <head>
     <title>Nina Fuentes - Software Engineer</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Livvic:thin100,bold,bolditalic,italic">
     <link rel="stylesheet" href="main.css">
 </head>
 
 <body>
 <!-- Section Navigation Bar -->
-    <div class="navbar">
-    <div class="top_logo">
-        <img scr="/MediaFolder/PlaceHolders/Top_logo.png">
+<header>
+    <!-- Desktop Layout -->
+    <div class="header-desktop">
+        <div class="top_logo">
+            <img class="logo" src="./MediaFolder/Top_logo.png">
+        </div>
+        <ul>
+            <li class="home"><a href="#home">Home</a></li>
+            <li class="about"><a href="#about">About</a></li>
+            <li class="portfolio"><a href="#portfolio">Portfolio</a></li>
+            <li class="contact"><a href="#contact">Contact</a></li>
+        </ul>
     </div>
-    <ul class=>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Portfolio</a></li>
-        <li><a href="#">Contact</a></li>
-    </ul>
-</div>
 
+    <!-- Mobile Layout -->
+    <div class="header-mobile" onclick="toggleMobileMenu(this)">
+        <div class="mobile_logo">
+            <img class="favicon" src="./MediaFolder/favicon.png">
+        </div>
+        <div class="active-section">
+            <p class="home">Home</p>
+            <p class="about">About</p>
+            <p class="portfolio">Portfolio</p>
+            <p class="contact">Contact</p>
+        </div>
+        <div id="hamburger-icon" >
+            <div class="hamburger">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+            <ul class="mobile-menu">
+                <li class="home"><a href="#home">Home</a></li>
+                <li class="about"><a href="#about">About</a></li>
+                <li class="portfolio"><a href="#portfolio">Portfolio</a></li>
+                <li class="contact"><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+
+</header>
+
+<main>
 <!-- Section Home -->
-<div class="home">
-<h1>Hi! I'm Nina.</h1>
-<!-- TODO: add first text/slogan -->
-<p>Self-taught software engineer creating websites and web apps that are intuitive and interactive so that your customers leave feeling like you had exactly what they needed.</p>
-</div>
-<!-- TODO: Add no-background image -->
-<div>
+<section class="home" id="home">
+    <div>
+    <h1>Hi! I'm Nina.</h1>
+        <p>Self-taught software engineer I create websites and web apps that are intuitive and interactive.</p>
+    </div>
+    <div>
+        <img src="./MediaFolder/largeHeadshot.png" height="100px">
+    </div>
+</section>
 
-</div>
+
 <!-- Section About -->
-<div class="about">
+<section class="about" id="about">
     <div>
         <!-- Video -->
     </div>
     <div>
         <h2>My Story</h2>
-        <p>I’m originally from Martinique, a beautiful French island in the Caribbean (yes, I have a passport for France). However, and perhaps because I watched too many American movies, I decided that the US was the place to be. I moved right after high school in 2009, lived in Massachusetts, Michigan, and Indiana. After many years of holding one visa after another, I finally became a US citizen in 2022. I currently reside in sunny Florida with my husband and our fur-babies.
-
-You might ask “why did you go to Michigan…? Isn’t cold there?” Yes, it’s cold, but that’s where my university was. I graduated from Andrews University with a degree in Mechanical Engineering. And I was offered and accepted a role at a Fortune 500 company before graduation.
-
-After spending a few years there, I realized that this wasn’t the path for me: I wasn’t passionate about the work.
-
-So I decided to do a 180deg turn, throw my bachelor degree in the trash, and open a health and fitness company. I helped women to transform their lifestyle through plant-based nutrition.
-            
-            A little bit about me. So that you know about who I am, why I do what I do and why you should hire me.
-
-            There are going to be multipe paragraphs here. Because I am more than a couple of words
-
-            So please, take your time and do as I say. But I don't know... maybe I want to keep it cool?</p>
+        <p>Hello, and welcome to my little corner of the internet. I'm glad you're here.
+            <br>
+            I'm originally from Martinique, a French island in the Caribbean, and currently live in (mostly) sunny Florida.
+            <br>
+            I should be writing about how I've been passionate with coding since I was in high school... and while it is true that I was the go to IT support in my family… I must admit that I was always intimidated by actually writing code (maybe due to the fact that most coding languages are written in English and I only spoke French at the time).
+            <br>
+            In college, I hesitated between getting a mechanical engineering degree and a computer science degree… I picked mechanical engineering because it seemed to be offering more options at the time (and I was 18, unsure of who I was, and wanted to keep my options options).
+            <br>
+            Well… fast-forward a decade later, a few career shifts, and here I am today. Maybe I should have gone with what my heart said all these years ago.
+            <br>
+            A common thread I've observed in the past years is that no matter what my role was, I'd always find myself tinkering with setting up routines to optimize processes.
+            <br>
+            I think I might like computers more than people: they do exactly as they're told… for better or worse, haha
+            <br>
+            As of now, I have challenged myself to get my first role as a full-time software engineer in under 3 months.
+            <br>
+            I am independently going through the App Academy curriculum while freelancing and working on projects to polish my skills.
+            <br>
+            For example, this website was fully built using only HTML, CSS, and a little bit of Javascript within a month of deciding to switch careers.
+            <br>
+            Did I mention that I'm a fast learner? 😎
+            <br>
+            You can find my current and past projects under the Portfolio section of this website.
+            <br>
+            That's all for now, maybe you have more questions for me…?
+            <br>
+            If that's the case, you can download my resume, schedule a 15-min chat with me, or send me an email.
+            <br>
+            I'm looking forward to hearing from you.
+            <br>
+            - Nina</p>
     </div>
     <div>
         <h2>My Skills</h2>
@@ -56,11 +108,11 @@ So I decided to do a 180deg turn, throw my bachelor degree in the trash, and ope
             <!-- Logos and Names of languages -->
         </div>
     </div>
-</div>
+</section>
 
 <!-- Section Portfolio -->
     <!-- TODO: Create Portfolio Cards and setup animation -->
-  <div class="portfolio"></div>
+<section class="portfolio" id="portfolio">
     <div class="Projects">
 
     </div>
@@ -84,54 +136,58 @@ So I decided to do a 180deg turn, throw my bachelor degree in the trash, and ope
             </p>
         </div>
     </div>
-</div>
+</section>
 
 <!-- Section Contact -->
-<div class="contact">
-<div class="Resume">
+<section class="contact" id="contact">
+    <div class="Resume">
 
-</div>
-<div class="Schedule"></div>
+    </div>
+    <div class="Schedule"></div>
 
-<div class="Form">
-    <fieldset>
-        <h2>Let's Get in Touch</h2>
+    <div class="Form">
+        <fieldset>
+            <h2>Let's Get in Touch</h2>
 
-        <label for="fullname">Name</label>
-        <input type="text" id="fullname" name="fullname">
+            <label for="fullname">Name</label>
+            <input type="text" id="fullname" name="fullname">
 
-        <label for="email">Email Adress</label>
-        <input type="email" id="email" name="email">
+            <label for="email">Email Adress</label>
+            <input type="email" id="email" name="email">
 
-        <label for="subject">Subject</label>
-        <input type="text" id="subject" name="subject">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject">
 
-        <label for="message">Message</label>
-        <textarea id="message" name="message"></textarea>
+            <label for="message">Message</label>
+            <textarea id="message" name="message"></textarea>
 
-        <button>Send</button>
-    </fieldset>
-</div>
-</div>
+            <button>Send</button>
+        </fieldset>
+    </div>
+</section>
+
+</main>
 
 <!-- Section Footer -->
-<div class="footer">
+<footer>
     <img class="footer_logo">
-</div>
-<div class="socials">
 
-</div>
-<div class="quote">
-    <p>"Simplicity is the ultimate sophistication."
-        <br>
-        - Leonardo Da Vinci
-    </p>
-</div>
+    <div class="socials">
 
-
-
+    </div>
+    <div class="quote">
+        <p>"Simplicity is the ultimate sophistication."
+            <br>
+            - Leonardo Da Vinci
+        </p>
+    </div>
+</footer>
 
 
 
+
+
+
+<script src="apps.js"></script>
 </body>
 </html>
