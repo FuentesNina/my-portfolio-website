@@ -125,11 +125,12 @@ div.portrait img {
 }
 
 /*Mobile Layout*/
-@media screen and (max-device-width: 900px) {
+@media screen and (max-device-width: 970px) {
     section.home {
         background: linear-gradient(white, var(--dark-blue));
         display: inline-block;
         width: 100%;
+        height: calc(100vh - var(--navHeightMobile));
     }
 
     div.intro {

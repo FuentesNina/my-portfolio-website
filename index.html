@@ -15,7 +15,7 @@
     <!-- Desktop Layout -->
     <div class="header-desktop">
         <div class="top_logo">
-            <img class="logo" src="./MediaFolder/Top_logo.png">
+            <a href="#home"><img class="logo" src="./MediaFolder/Top_logo.png"></a>
         </div>
         <ul>
             <li class="home"><a href="#home">Home</a></li>
@@ -26,9 +26,9 @@
     </div>
 
     <!-- Mobile Layout -->
-    <div class="header-mobile" onclick="toggleMobileMenu(this)">
+    <div class="header-mobile" >
         <div class="mobile_logo">
-            <img class="favicon" src="./MediaFolder/favicon.png">
+            <a href="#home"><img class="favicon" src="./MediaFolder/favicon.png"></a>
         </div>
         <div class="active-section">
             <p class="home">Home</p>
@@ -36,7 +36,7 @@
             <p class="portfolio">Portfolio</p>
             <p class="contact">Contact</p>
         </div>
-        <div id="hamburger-icon" >
+        <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
             <div class="hamburger">
                 <div class="bar1"></div>
                 <div class="bar2"></div>

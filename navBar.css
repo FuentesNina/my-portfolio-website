@@ -24,7 +24,8 @@ header {
 .top_logo {
     display: flex;
     justify-content: flex-start;
-    align-self: center;
+    align-items: center;
+    padding-left: 2%;
 }
 
 .logo {
@@ -83,7 +84,7 @@ header {
 }
 
  /* Desktop Responsive*/
- @media screen and (max-width: 900px) {
+ @media screen and (max-width: 650px) {
     .header-desktop {
         display: none;
     }
@@ -96,8 +97,8 @@ header {
     }
 }
 
-.mobile_logo {
-    align-self: center;
+div.mobile_logo {
+    padding: 12px;
 }
 
 .active-section{
@@ -160,6 +161,21 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    animation: transitionInMenu 0.4s;
+    opacity: 1;
+    filter: drop-shadow(0px 10px 5px var(--yellow));
+}
+
+@keyframes transitionInMenu {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 .mobile-menu li a{
@@ -169,6 +185,8 @@ header {
     color: black;
     position: relative;
 }
+
+
 
 .mobile-menu li a::after {
     content: '';
@@ -201,7 +219,7 @@ header {
 
 
 /* Mobile Menu*/
-@media screen and (max-device-width: 900px) {
+@media screen and (max-device-width: 800px) {
     .header-desktop {
         display: none;
     }
@@ -246,6 +264,11 @@ header {
 
     .active-section p, .mobile-menu a {
         font-size: 40px;
+    }
+
+    .mobile-menu li {
+        margin-top: 30px;
+        margin-bottom: 30px;
     }
 
     .header-mobile p.active::after {

@@ -27,6 +27,12 @@ section {
     scroll-margin-top: var(--navHeight);
 }
 
+@media screen and (max-device-width: 800px) {
+    section {
+        scroll-margin-top: var(--navHeightMobile);
+    }
+}
+
 h2 {
     text-transform: uppercase;
 }
