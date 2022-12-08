@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Nina Fuentes - Software Engineer</title>
+    <link rel="icon" type="image/x-icon" href="./MediaFolder/favicon.png">
+    <link rel="stylesheet" href="./general.css">
+    <link rel="stylesheet" href="./navBar.css">
+    <link rel="stylesheet" href="./homeSection.css">
+    <link rel="stylesheet" href="./aboutSection.css">
+</head>
+
+<body>
+<!-- Section Navigation Bar -->
+<header>
+    <!-- Desktop Layout -->
+    <div class="header-desktop">
+        <div class="top_logo">
+            <img class="logo" src="./MediaFolder/Top_logo.png">
+        </div>
+        <ul>
+            <li class="home"><a href="#home">Home</a></li>
+            <li class="about"><a href="#about">About</a></li>
+            <li class="portfolio"><a href="#portfolio">Portfolio</a></li>
+            <li class="contact"><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Mobile Layout -->
+    <div class="header-mobile" onclick="toggleMobileMenu(this)">
+        <div class="mobile_logo">
+            <img class="favicon" src="./MediaFolder/favicon.png">
+        </div>
+        <div class="active-section">
+            <p class="home">Home</p>
+            <p class="about">About</p>
+            <p class="portfolio">Portfolio</p>
+            <p class="contact">Contact</p>
+        </div>
+        <div id="hamburger-icon" >
+            <div class="hamburger">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+            <ul class="mobile-menu">
+                <li class="home"><a href="#home">Home</a></li>
+                <li class="about"><a href="#about">About</a></li>
+                <li class="portfolio"><a href="#portfolio">Portfolio</a></li>
+                <li class="contact"><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+
+</header>
+
+<main>
+<!-- Section Home -->
+<section class="home" id="home">
+    <div class="intro">
+        <h1>
+            <span class="letter">H</span>
+            <span class="letter">i</span>
+            <span class="letter">!</span>
+            <br>
+            <span class="letter">I</span>
+            <span class="letter">'</span>
+            <span class="letter">m</span>
+            <span class="space"> </span>
+            <span class="letter">N</span>
+            <span class="letter">i</span>
+            <span class="letter">n</span>
+            <span class="letter">a</span>
+            <span class="letter">.</span>
+        </h1>
+        <h1 class="mobile">Hi!<br>I'm Nina.</h1>
+        <p>Self-taught software engineer creating websites and web applications that are intuitive and interactive.</p>
+        <a href="#about"><button>Learn More</button></a>
+    </div>
+    <div class="portrait">
+        <img src="./MediaFolder/largeHeadshot.png">
+    </div>
+</section>
+
+
+<!-- Section About -->
+<section class="about" id="about">
+    <div class="story">
+        <div class="video">
+            <video src="./MediaFolder/PlaceHolders/1080p-trimmed.mov" type="video/mov" controls poster="./MediaFolder/PlaceHolders/video screenshot.png">
+                <p>
+                    Your browser doesn't support HTML video. Here is a
+                    <a href="./MediaFolder/PlaceHolders/1080p-trimmed.mov">link to the video</a> instead.
+                </p>
+            </video>
+        </div>
+        <div class="bio">
+            <h2>My Story</h2>
+            <div class="text">
+                <p>Hello, and welcome to my little corner of the internet. I'm glad you're here.
+                <br><br>
+                I'm originally from Martinique, a French island in the Caribbean, and currently live in (mostly) sunny Florida.
+                <br><br>
+                I should be writing about how I've been passionate with coding since I was in high school... and while it is true that I was the go to IT support in my family… I must admit that I was always intimidated by actually writing code (maybe due to the fact that most coding languages are written in English and I only spoke French at the time).
+                <br><br>
+                In college, I hesitated between getting a mechanical engineering degree and a computer science degree… I picked mechanical engineering because it seemed to be offering more options at the time (and I was 18, unsure of who I was, and wanted to keep my options options).
+                <br><br>
+                Well… fast-forward a decade later, a few career shifts, and here I am today. Maybe I should have gone with what my heart said all these years ago.
+                <br><br>
+                A common thread I've observed in the past years is that no matter what my role was, I'd always find myself tinkering with setting up routines to optimize processes.
+                <br><br>
+                I think I might like computers more than people: they do exactly as they're told… for better or worse, haha
+                <br><br>
+                As of now, I have challenged myself to get my first role as a full-time software engineer in under 3 months.
+                <br><br>
+                I am independently going through the App Academy curriculum while freelancing and working on projects to polish my skills.
+                <br><br>
+                For example, this website was fully built using only HTML, CSS, and a little bit of Javascript within a month of deciding to switch careers.
+                <br><br>
+                Did I mention that I'm a fast learner? 😎
+                <br><br>
+                You can find my current and past projects under the Portfolio section of this website.
+                <br><br>
+                That's all for now, maybe you have more questions for me…?
+                <br><br>
+                If that's the case, you can download my resume, schedule a 15-min chat with me, or send me an email.
+                <br><br>
+                I'm looking forward to hearing from you.
+                <br><br>
+                - Nina</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="skills">
+        <div>
+            <h2>My Skills</h2>
+            <div class="languages">
+                <!-- Logos and Names of languages -->
+                <figure>
+                    <img src="./MediaFolder/Language Logos/HTML-5-logo-vector-01.png">
+                    <figcaption>HTML</figcaption>
+                </figure>
+                <figure>
+                    <img src="./MediaFolder/Language Logos/CSS-3-01.png">
+                    <figcaption>CSS</figcaption>
+                </figure>
+                <figure>
+                    <img src="./MediaFolder/Language Logos/JavaScript-01.png">
+                    <figcaption>Javascript</figcaption>
+                </figure>
+                <figure>
+                    <img src="./MediaFolder/Language Logos/Node-JS-01.png">
+                    <figcaption>Node.JS</figcaption>
+                </figure>
+                <figure>
+                    <a title="Visit my GitHub Profile" href="https://github.com/FuentesNina"><img src="./MediaFolder/Language Logos/Github-01.png"></a>
+                    <figcaption>GitHub</figcaption>
+                </figure>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Section Portfolio -->
+    <!-- TODO: Create Portfolio Cards and setup animation -->
+<section class="portfolio" id="portfolio">
+    <div class="Projects">
+
+    </div>
+
+    <!-- Testimonials -->
+    <div>
+        <div>
+            <img class="Client-Picture">
+            <p class="testimonial">“This is a testimonial from a client that I worked with and they were very satisfied with the work I provided for them.”
+            </p>
+            <p class="test_author">
+                Author Name - Company Name
+            </p>
+        </div>
+        <div>
+            <img class="Client-Picture">
+            <p class="testimonial">“This is a testimonial from a client that I worked with and they were very satisfied with the work I provided for them.”
+            </p>
+            <p class="test_author">
+                Author Name - Company Name
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- Section Contact -->
+<section class="contact" id="contact">
+    <div class="Resume">
+
+    </div>
+    <div class="Schedule"></div>
+
+    <div class="Form">
+        <fieldset>
+            <h2>Let's Get in Touch</h2>
+
+            <label for="fullname">Name</label>
+            <input type="text" id="fullname" name="fullname">
+
+            <label for="email">Email Adress</label>
+            <input type="email" id="email" name="email">
+
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject">
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message"></textarea>
+
+            <button>Send</button>
+        </fieldset>
+    </div>
+</section>
+
+</main>
+
+<!-- Section Footer -->
+<footer>
+    <img class="footer_logo">
+
+    <div class="socials">
+
+    </div>
+    <div class="quote">
+        <p>"Simplicity is the ultimate sophistication."
+            <br>
+            - Leonardo Da Vinci
+        </p>
+    </div>
+</footer>
+
+
+
+
+
+
+<script src="./apps.js"></script>
+</body>
+</html>

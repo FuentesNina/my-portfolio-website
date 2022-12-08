@@ -1,0 +1,204 @@
+/* Desktop Layout */
+
+section.home {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: linear-gradient(white, var(--dark-blue));
+    height: calc( 100vh - var(--navHeight));
+    width: 100%;
+}
+
+div.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 20%;
+}
+
+.home h1 {
+    font-size: 64px;
+    text-shadow: var(--pink) 1px 0 10px;
+
+}
+
+.home h1.mobile {
+    display: none;
+}
+
+span.letter, span.space {
+    margin: 0 -10px 0 -5px;
+    transition: all 0.3s;
+}
+
+span.space {
+    margin: 0 10px;
+}
+
+.letter:hover {
+    font-size: 100px;
+}
+
+.home p {
+    font-size: 22px;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.intro button {
+    border-color: var(--pink);
+    color: var(--pink);
+    background-color: transparent;
+    border-radius: 25px;
+    font-size: 18px;
+    padding: 0.5em;
+    padding-left: 1em;
+    padding-right: 1em;
+    align-self: flex-start;
+    border-style: solid;
+    font-weight: 600;
+    transition: all .5s ease-out;
+    animation: BlinkingButton 3s infinite;
+    animation-delay: 3s;
+}
+
+.intro button:hover {
+    border-color: none;
+    color: white;
+    background-color: var(--pink);
+    animation: none;
+
+}
+
+div.portrait {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    animation: transitionInPortrait 2s;
+
+}
+
+div.portrait img {
+    height: 85vh;
+
+}
+
+/* Desktop Responsive */
+@media screen and (max-width: 900px) {
+    section.home {
+        background: linear-gradient(white, var(--dark-blue));
+        display: inline-block;
+        width: 100%;
+    }
+
+    div.intro {
+        display: flex;
+        align-items: center;
+        margin: 0;
+        height: 35%;
+    }
+
+    .home h1 {
+        display:  none;
+    }
+
+    .home h1.mobile {
+        display: flex;
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .home p {
+        font-size: 18px;
+        text-align: center;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    div.portrait {
+        justify-content:center;
+        height: 65%;
+    }
+
+    div.portrait img {
+        height: 100%;
+    }
+}
+
+/*Mobile Layout*/
+@media screen and (max-device-width: 900px) {
+    section.home {
+        background: linear-gradient(white, var(--dark-blue));
+        display: inline-block;
+        width: 100%;
+    }
+
+    div.intro {
+        display: flex;
+        align-items: center;
+        margin: 0;
+        height: 35%;
+    }
+
+    .home h1 {
+        display:  none;
+    }
+
+    .home h1.mobile {
+        display: flex;
+        font-size: 90px;
+        text-align: center;
+    }
+
+    .home p {
+        font-size: 40px;
+        text-align: center;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    .intro button {
+        font-size: 36px;
+    }
+
+    div.portrait {
+        justify-content:center;
+        height: 65%;
+    }
+
+    div.portrait img {
+        height: 100%;
+    }
+}
+
+
+/* Animations */
+
+@keyframes transitionInPortrait {
+    from {
+        opacity: 0;
+        transform:translate(50%);
+    }
+
+    to {
+        opacity: 1;
+        transform:translate(0);
+    }
+}
+
+@keyframes BlinkingButton {
+    0% {
+        border-color: var(--pink);
+        color: var(--pink);
+        background-color: transparent;
+    }
+    50% {
+        border-color: none;
+        color: white;
+        background-color: var(--pink);
+    }
+    100% {
+        border-color: var(--pink);
+        color: var(--pink);
+        background-color: transparent;
+    }
+}

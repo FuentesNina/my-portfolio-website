@@ -1,0 +1,32 @@
+/*Entire Webpage*/
+@import url('https://fonts.googleapis.com/css2?family=Livvic:ital,wght@0,400;0,600;0,700;1,400;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Livvic', sans-serif;
+
+}
+
+:root {
+    --yellow: #DAB354 ;
+    --light-blue: #D6E9E5;
+    --dark-blue: #B0D1CB ;
+    --light-grey: #F6F2E8 ;
+    --dark-grey: #D7D4CE;
+    --pink: #F532D9 ;
+    --navHeight: 64px;
+    --navHeightMobile: 120px;
+}
+
+html {
+   scroll-behavior: smooth;
+}
+
+section {
+    scroll-margin-top: var(--navHeight);
+}
+
+h2 {
+    text-transform: uppercase;
+}
