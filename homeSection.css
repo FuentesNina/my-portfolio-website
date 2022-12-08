@@ -5,6 +5,7 @@ section.home {
     grid-template-columns: 1fr 1fr;
     background: linear-gradient(white, var(--dark-blue));
     height: calc( 100vh - var(--navHeight));
+    width: 100%;
 }
 
 div.intro {
@@ -84,8 +85,7 @@ div.portrait img {
 /* Mobile Layout */
 @media screen 
     and (min-device-width: 320px)
-    and (max-device-width: 480px) 
-    and (-webkit-min-device-pixel-ratio: 2) {
+    and (max-device-width: 480px) {
     section.home {
         background: linear-gradient(white, var(--dark-blue));
         display: inline-block;
