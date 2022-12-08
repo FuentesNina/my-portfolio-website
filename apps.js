@@ -48,4 +48,14 @@ window.addEventListener('scroll', () => {
 // Open & Close Mobile Menu
 function toggleMobileMenu(menu) {
     menu.classList.toggle('open');
+};
+
+
+//Makes sure the page loads at the top of the page
+if (history.scrollRestoration) {
+    history.scrollRestoration = 'manual';
+} else {
+    window.onbeforeunload = function () {
+        window.scrollTo(0, 0);
+    }
 }
