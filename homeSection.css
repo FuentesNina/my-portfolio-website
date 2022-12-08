@@ -57,7 +57,7 @@ span.space {
     border-style: solid;
     font-weight: 600;
     transition: all .5s ease-out;
-    animation: BlinkingButton 2s infinite;
+    animation: BlinkingButton 3s infinite;
     animation-delay: 3s;
 }
 
@@ -82,13 +82,12 @@ div.portrait img {
 
 }
 
-/* Mobile Layout */
-@media screen 
-    and (min-device-width: 320px)
-    and (max-device-width: 480px) {
+/* Desktop Responsive */
+@media screen and (max-width: 900px) {
     section.home {
         background: linear-gradient(white, var(--dark-blue));
         display: inline-block;
+        width: 100%;
     }
 
     div.intro {
@@ -113,6 +112,52 @@ div.portrait img {
         text-align: center;
         padding-left: 10%;
         padding-right: 10%;
+    }
+
+    div.portrait {
+        justify-content:center;
+        height: 65%;
+    }
+
+    div.portrait img {
+        height: 100%;
+    }
+}
+
+/*Mobile Layout*/
+@media screen and (max-device-width: 900px) {
+    section.home {
+        background: linear-gradient(white, var(--dark-blue));
+        display: inline-block;
+        width: 100%;
+    }
+
+    div.intro {
+        display: flex;
+        align-items: center;
+        margin: 0;
+        height: 35%;
+    }
+
+    .home h1 {
+        display:  none;
+    }
+
+    .home h1.mobile {
+        display: flex;
+        font-size: 90px;
+        text-align: center;
+    }
+
+    .home p {
+        font-size: 40px;
+        text-align: center;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    .intro button {
+        font-size: 36px;
     }
 
     div.portrait {

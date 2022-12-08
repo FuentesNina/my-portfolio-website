@@ -1,0 +1,41 @@
+section.about {
+    height: calc( 100vh - var(--navHeight));
+    display: inline-block;
+}
+
+.story {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 80%;
+    background-color: red;
+}
+
+.story div.video {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+}
+
+.story video {
+    width: 90%;
+    border-radius: 25px;
+}
+
+.story div.bio {
+    display: inline-block;
+}
+
+.story div.bio div.text {
+    overflow: scroll;
+}
+
+
+
+.skills {
+    height: 20%;
+    background-color: var(--light-grey);
+}
+
+.languages figure {
+    display: none;
+}

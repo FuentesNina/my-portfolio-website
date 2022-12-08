@@ -68,10 +68,22 @@ header {
 .header-desktop ul li.active::after{
     width: 100%;
 }
- /* Mobile Menu*/
- @media screen 
-    and (min-device-width: 320px)
-    and (max-device-width: 480px) {
+
+.favicon {
+    height: 50px;
+}
+
+.mobile-menu {
+    display: none;
+    position: absolute;
+    background-color: white;
+    left: 0;
+    top: var(--navHeight);
+    width: 100%;
+}
+
+ /* Desktop Responsive*/
+ @media screen and (max-width: 900px) {
     .header-desktop {
         display: none;
     }
@@ -82,10 +94,6 @@ header {
         border: 0;
         align-items: center;
     }
-}
-
-.favicon {
-    height: 50px;
 }
 
 .mobile_logo {
@@ -137,16 +145,10 @@ header {
     background-color: black;
     margin: 6px 20px;
     transition: 0.4s;
+    justify-items: flex-end;
 }
 
-.mobile-menu {
-    display: none;
-    position: absolute;
-    background-color: white;
-    left: 0;
-    top: var(--navHeight);
-    width: 100%;
-}
+
 
 .mobile-menu li {
     margin-bottom: 15px;
@@ -195,4 +197,58 @@ header {
 .open .bar3 {
     -webkit-transform: rotate(45deg) translate(-6px, -8px);
     transform: rotate(45deg) translate(-6px, -8px);
+}
+
+
+/* Mobile Menu*/
+@media screen and (max-device-width: 900px) {
+    .header-desktop {
+        display: none;
+    }
+    .header-mobile {
+        display: grid;
+        grid-template-columns: 1fr 5fr 1fr;
+        grid-template-rows: 1fr;
+        border: 0;
+        align-items: center;
+        height:100%;
+    }
+
+    header {
+        height: var(--navHeightMobile);
+    }
+
+    .favicon {
+        height: 90px;
+        align-self: center;
+    }
+
+    .mobile-menu {
+        top: var(--navHeightMobile);
+    }
+
+    .bar1, .bar2, .bar3 {
+        width: 80px;
+        height: 5px;
+        background-color: black;
+        margin: 10px 20px;
+    }
+
+    .open .bar3 {
+        -webkit-transform: rotate(45deg) translate(-10px, -10px);
+        transform: rotate(45deg) translate(-10px, -10px);
+    }
+
+    .open .bar1 {
+        -webkit-transform: rotate(-45deg) translate(-10px, 10px);
+        transform: rotate(-45deg) translate(-10px, 10px);
+    }
+
+    .active-section p, .mobile-menu a {
+        font-size: 40px;
+    }
+
+    .header-mobile p.active::after {
+        height: 5px;
+    }
 }
