@@ -75,7 +75,6 @@ div.portrait {
     justify-content: flex-start;
     animation: transitionInPortrait 2s;
     overflow: hidden;
-
 }
 
 div.portrait img {
@@ -166,25 +165,13 @@ div.portrait img {
     div.portrait {
         justify-content:center;
         height: 65%;
-        animation: transitionInPortraitMobile;
+        animation: transitionInPortraitMobile 2s;
     }
 
     div.portrait img {
         height: 100%;
         
     }
-    
-    @keyframes transitionInPortraitMobile {
-    from {
-        opacity: 0;
-        transform:translateY(50%);
-    }
-
-    to {
-        opacity: 1;
-        transform:translateY(0);
-    }
-}
 }
 
 
@@ -217,5 +204,17 @@ div.portrait img {
         border-color: var(--pink);
         color: var(--pink);
         background-color: transparent;
+    }
+}
+
+@keyframes transitionInPortraitMobile {
+    from {
+        opacity: 0;
+        transform:translateY(50%);
+    }
+
+    to {
+        opacity: 1;
+        transform:translateY(0);
     }
 }
