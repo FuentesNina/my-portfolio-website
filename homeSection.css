@@ -165,10 +165,12 @@ div.portrait img {
     div.portrait {
         justify-content:center;
         height: 65%;
+        transition: none;
     }
 
     div.portrait img {
         height: 100%;
+        
     }
 }
 
