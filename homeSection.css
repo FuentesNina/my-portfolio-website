@@ -165,7 +165,7 @@ div.portrait img {
     div.portrait {
         justify-content:center;
         height: 65%;
-        transition: none;
+        animation: none;
     }
 
     div.portrait img {
