@@ -1,12 +1,3 @@
-section.about {
-    height: calc(100vh - var(--navHeightMobile));
-    /* height: fit-content; */
-}
-
-/* .storySection {
-    margin-bottom: 150px;
-} */
-
 .video, .story {
     height: 30vh;
 }
@@ -35,18 +26,16 @@ section.about h2 {
 }
 
 section.about .bio p {
-    font-size: 30px;
+    font-size: 35px;
     padding: 2em;
 }
 
 div.bio {
-
-    overflow: scroll;
     height: 50%;
 }
 
 .about .skillsSection {
-    height: 500px;
+    height: fit-content;
     background-color: var(--light-grey);
     display: flex;
     flex-direction: column;
@@ -58,22 +47,12 @@ h2.skillsTitle {
     margin: 1em;
 }
 
-
-/* .skillsSection::before {
-    position: absolute;
-    top: -150px;
-    content: '';
-    width: 100vw;
-    height: 150px;
-    background: linear-gradient(transparent, white, white);
-} */
-
 .scroll-parent {
     display: inline-block;
     position:relative;
     width: 100vw;
     height:300px;
-    overflow-x: scroll;
+    overflow-x: hidden;
 }
 
 .languages {
@@ -95,7 +74,6 @@ h2.skillsTitle {
 
 .languages {
     display: flex;
-    /* overflow-x: scroll; */
     align-content: center;
 }
 
@@ -114,17 +92,67 @@ p.languageTitle {
     font-size: 30px;
 }
 
-@keyframes slide {
-    0% {
-        left: 0;
-    }
-    50% {
-        left: -100%;
-    }
-    100% {
-        left: 0;
-    }
+.expandedSkills .collapsible {
+    font-size: 35px;
+    /* cursor: pointer; */
+    padding: 1em;
+    width: 100%;
+    text-align: left;
+    outline: none;
+    border: none;
+    background-color: inherit;
 }
+
+.expandedSkills .collapsible:after {
+    content: '\02795';
+    float: right;
+}
+
+.expandedSkills.active .collapsible {
+    text-align: left;
+    text-transform: uppercase;
+    text-decoration: underline;
+    border: 0px;
+    border-bottom: 1px;
+    border-style: dotted;
+    font-weight: bold;
+    background-color: var(--dark-grey);
+    color: inherit;
+}
+
+.expandedSkills.active .collapsible:after {
+    content: "\2796";
+    float: right;
+}
+
+.expandedSkills .content {
+    display: none;
+    overflow: hidden;
+    font-size: 30px;
+    padding: 2em;
+    list-style: none;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+
+.expandedSkills.active .content {
+    display: grid;
+    animation: expandDropDown 1s ease-out;
+    max-height: max-content;
+}
+
+.skillsSection .content p{
+    font-weight: bold;
+    padding-bottom: 0.5em;
+}
+
+.skillsSection .content ul {
+    list-style: none;
+}
+
+
+
+/* Animations */
 
 @keyframes primary {
     from{
@@ -144,44 +172,17 @@ p.languageTitle {
     }
 }
 
-/* section.about {
-    height: calc( 100vh - var(--navHeight));
-    display: inline-block;
+@keyframes expandDropDown {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
-.story {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    height: 80%;
-    background-color: red;
-}
-
-.story div.video {
-    display: flex;
-    align-self: center;
-    justify-content: center;
-}
-
-.story video {
-    width: 90%;
-    border-radius: 25px;
-}
-
-.story div.bio {
-    display: inline-block;
-}
-
-.story div.bio div.text {
-    overflow: scroll;
-}
-
-
-
-.skills {
-    height: 20%;
-    background-color: var(--light-grey);
-}
-
-.languages figure {
-    display: none;
+/* for laptops include hover feature */
+/* .expandedSkills .collapsible:hover {
+    font-weight: bold;
+    background-color: var(--dark-grey);
 } */
