@@ -1,10 +1,15 @@
+section.about {
+    --numberOfLogos: 5;
+    --logoSize: calc( 3 * var(--h2fontsize));
+    --infLoopLength: calc((var(--logoSize) + var(--pfontsize)) * (var(--numberOfLogos) + 1) + var(--pfontsize));
+}
+
 .video, .story {
-    height: 30vh;
+    height: 30%;
 }
 
 .story {
     height: fit-content;
-
 }
 
 .storySection .video {
@@ -20,14 +25,17 @@
 }
 
 section.about h2 {
-    font-size: 40px;
+    font-size: var(--h2fontsize);
     text-align: center;
-
+    margin: 0;
+    margin-top: 2em;
+    margin-bottom: 2em;
 }
 
 section.about .bio p {
-    font-size: 35px;
+    font-size: var(--pfontsize);
     padding: 2em;
+    padding-top: 0;
 }
 
 div.bio {
@@ -43,7 +51,7 @@ div.bio {
     top: 10vh;
 }
 
-h2.skillsTitle {
+section.about h2.skillsTitle {
     margin: 1em;
 }
 
@@ -51,7 +59,7 @@ h2.skillsTitle {
     display: inline-block;
     position:relative;
     width: 100vw;
-    height:300px;
+    height:calc(2 * var(--logoSize));
     overflow-x: hidden;
 }
 
@@ -78,23 +86,23 @@ h2.skillsTitle {
 }
 
 .languageCard {
-    max-width: 150px;
-    margin: 30px;
+    max-width: var(--logoSize);
+    margin: var(--pfontsize);
 
 }
 
 .languageLogo {
-    height: 150px;
+    height: var(--logoSize);
 }
 
 p.languageTitle {
     text-align: center;
-    font-size: 30px;
+    font-size: var(--pfontsize);
 }
 
 .expandedSkills .collapsible {
-    font-size: 35px;
-    /* cursor: pointer; */
+    font-size: var(--pfontsize);
+    cursor: pointer;
     padding: 1em;
     width: 100%;
     text-align: left;
@@ -128,12 +136,11 @@ p.languageTitle {
 .expandedSkills .content {
     display: none;
     overflow: hidden;
-    font-size: 30px;
+    font-size: var(--pfontsize);
     padding: 2em;
     list-style: none;
     grid-template-columns: repeat(3, 1fr);
 }
-
 
 .expandedSkills.active .content {
     display: grid;
@@ -151,21 +158,19 @@ p.languageTitle {
 }
 
 
-
 /* Animations */
-
 @keyframes primary {
     from{
         left: 0%;
     }
     to {
-        left: -1050px;
+        left: calc( -1 * var(--infLoopLength));
     }
 }
 
 @keyframes secondary {
     from{
-        left: 1050px;
+        left: var(--infLoopLength);
     }
     to {
         left: 0%;
@@ -181,8 +186,26 @@ p.languageTitle {
     }
 }
 
-/* for laptops include hover feature */
-/* .expandedSkills .collapsible:hover {
-    font-weight: bold;
-    background-color: var(--dark-grey);
-} */
+/* Responsive layout*/
+@media screen and (min-width: 800px) and (min-device-width: 750px) {
+    .storySection {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+        'video title'
+        'video bio';
+    }
+
+    .video {
+        grid-area: video;
+        align-self: center;
+    }
+}
+
+@media screen and (min-device-width: 1200px) {
+    /* for laptops include hover feature */
+    .expandedSkills .collapsible:hover {
+        font-weight: bold;
+        background-color: var(--dark-grey);
+    }
+}
