@@ -1,4 +1,150 @@
 section.about {
+    height: calc(100vh - var(--navHeightMobile));
+    /* height: fit-content; */
+}
+
+/* .storySection {
+    margin-bottom: 150px;
+} */
+
+.video, .story {
+    height: 30vh;
+}
+
+.story {
+    height: fit-content;
+
+}
+
+.storySection .video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2em;
+}
+
+.storySection video {
+    border-radius: 25px;
+    width: 90%;
+}
+
+section.about h2 {
+    font-size: 40px;
+    text-align: center;
+
+}
+
+section.about .bio p {
+    font-size: 30px;
+    padding: 2em;
+}
+
+div.bio {
+
+    overflow: scroll;
+    height: 50%;
+}
+
+.about .skillsSection {
+    height: 500px;
+    background-color: var(--light-grey);
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    top: 10vh;
+}
+
+h2.skillsTitle {
+    margin: 1em;
+}
+
+
+/* .skillsSection::before {
+    position: absolute;
+    top: -150px;
+    content: '';
+    width: 100vw;
+    height: 150px;
+    background: linear-gradient(transparent, white, white);
+} */
+
+.scroll-parent {
+    display: inline-block;
+    position:relative;
+    width: 100vw;
+    height:300px;
+    overflow-x: scroll;
+}
+
+.languages {
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    align-items: center;
+}
+
+.primary {
+    animation: primary 10s linear infinite;
+}
+
+.secondary {
+    animation: secondary 10s linear infinite;
+}
+
+.languages {
+    display: flex;
+    /* overflow-x: scroll; */
+    align-content: center;
+}
+
+.languageCard {
+    max-width: 150px;
+    margin: 30px;
+
+}
+
+.languageLogo {
+    height: 150px;
+}
+
+p.languageTitle {
+    text-align: center;
+    font-size: 30px;
+}
+
+@keyframes slide {
+    0% {
+        left: 0;
+    }
+    50% {
+        left: -100%;
+    }
+    100% {
+        left: 0;
+    }
+}
+
+@keyframes primary {
+    from{
+        left: 0%;
+    }
+    to {
+        left: -1050px;
+    }
+}
+
+@keyframes secondary {
+    from{
+        left: 1050px;
+    }
+    to {
+        left: 0%;
+    }
+}
+
+/* section.about {
     height: calc( 100vh - var(--navHeight));
     display: inline-block;
 }
@@ -38,4 +184,4 @@ section.about {
 
 .languages figure {
     display: none;
-}
+} */
