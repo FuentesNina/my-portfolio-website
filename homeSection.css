@@ -80,6 +80,7 @@ div.portrait {
 
 div.portrait img {
     height: 85vh;
+    overflow: hidden;
 
 }
 
@@ -165,7 +166,7 @@ div.portrait img {
     div.portrait {
         justify-content:center;
         height: 65%;
-        animation: none;
+        /*animation: none*/
     }
 
     div.portrait img {
