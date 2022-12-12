@@ -131,7 +131,6 @@ div.portrait img {
         background: linear-gradient(white, var(--dark-blue));
         display: inline-block;
         width: 100%;
-        height: calc(100vh - var(--navHeightMobile));
     }
 
     div.intro {

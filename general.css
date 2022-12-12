@@ -16,7 +16,6 @@
     --dark-grey: #D7D4CE;
     --pink: #F532D9 ;
     --navHeight: 64px;
-    --navHeightMobile: 120px;
     --h2fontsize: 30px;
     --pfontsize: 25px;
 }
@@ -24,6 +23,16 @@
 html {
    scroll-behavior: smooth;
     display: inline;
+}
+
+header {
+    height: var(--navHeight);
+}
+
+@media screen and (max-width: 650px) {
+    header {
+        height: 78px;
+    }
 }
 
 section {
@@ -35,17 +44,10 @@ footer {
 }
 
 @media screen and (max-device-width: 750px) {
-    section {
-        scroll-margin-top: var(--navHeightMobile);
-    }
-
     :root {
+        --navHeight: 120px;
         --h2fontsize: 40px;
         --pfontsize: 35px;
-    }
-
-    footer {
-        height: var(--navHeightMobile);
     }
 }
 

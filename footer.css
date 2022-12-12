@@ -3,15 +3,13 @@ footer {
     display: flex;
     justify-content: space-around;
     color: white;
+    align-items: center;
+}
+
+footer svg {
+    width: calc(var(--navHeightMobile) / 2) ;
 }
 
 .github .st0 {
     fill: white;
 }
-
-footer .socials {
-    height: inherit;
-    width: --var(--navHeightMobile);
-}
-
-/* .st0{fill:white;} */
