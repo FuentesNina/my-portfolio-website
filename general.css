@@ -30,13 +30,22 @@ section {
     scroll-margin-top: var(--navHeight);
 }
 
+footer {
+    height: var(--navHeight);
+}
+
 @media screen and (max-device-width: 750px) {
     section {
         scroll-margin-top: var(--navHeightMobile);
     }
+
     :root {
         --h2fontsize: 40px;
         --pfontsize: 35px;
+    }
+
+    footer {
+        height: var(--navHeightMobile);
     }
 }
 

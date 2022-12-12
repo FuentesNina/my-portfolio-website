@@ -1,0 +1,17 @@
+footer {
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+}
+
+.github .st0 {
+    fill: white;
+}
+
+footer .socials {
+    height: inherit;
+    width: --var(--navHeightMobile);
+}
+
+/* .st0{fill:white;} */
