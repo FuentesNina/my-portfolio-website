@@ -1,6 +1,5 @@
 /* Entire Navigation Bar Settings*/
 header {
-    height: var(--navHeight);
     position: sticky;
     background-color: white;
     top: 0;
@@ -232,17 +231,13 @@ div.mobile_logo {
         height:100%;
     }
 
-    header {
-        height: var(--navHeightMobile);
-    }
-
     .favicon {
         height: 90px;
         align-self: center;
     }
 
     .mobile-menu {
-        top: var(--navHeightMobile);
+        top: var(--navHeight);
     }
 
     .bar1, .bar2, .bar3 {
