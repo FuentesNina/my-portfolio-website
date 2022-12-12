@@ -41,7 +41,3 @@ footer svg {
         font-size: 12px;
     }
 }
-
-section.portfolio, section.contact {
-    display: none;
-}
