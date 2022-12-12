@@ -26,3 +26,22 @@ footer svg {
 .quote p.author {
     display: none;
 }
+
+
+@media screen and (min-device-width: 800px) {
+    .quote p.author {
+        display: block;
+    }
+
+    footer {
+        flex-direction: row;
+    }
+
+    .quote p{
+        font-size: 12px;
+    }
+}
+
+section.portfolio, section.contact {
+    display: none;
+}
