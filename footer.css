@@ -1,15 +1,28 @@
 footer {
     background-color: black;
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
     color: white;
     align-items: center;
+    fill: white;
+    padding-top: 1em;
+    padding-bottom: 1em;
 }
 
 footer svg {
-    width: calc(var(--navHeightMobile) / 2) ;
+    width: calc(var(--navHeight) / 2);
+    margin: 1em;
 }
 
-.github .st0 {
-    fill: white;
+.footer_logo {
+    display: none;
+}
+
+.quote p{
+    font-family: 'tomatoesregular';
+}
+
+.quote p.author {
+    display: none;
 }

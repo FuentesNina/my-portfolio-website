@@ -1,6 +1,15 @@
 /*Entire Webpage*/
 @import url('https://fonts.googleapis.com/css2?family=Livvic:ital,wght@0,400;0,600;0,700;1,400;1,700&display=swap');
 
+@font-face {
+    font-family: 'tomatoesregular';
+    src: url('./webfontkit-20221211-230642/Tomatoes-O8L8.ttf') format('ttf'),
+         url('./webfontkit-20221211-230642/tomatoes-o8l8-webfont.woff2') format('woff2'),
+         url('./webfontkit-20221211-230642/tomatoes-o8l8-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -20,6 +29,10 @@
     --pfontsize: 25px;
 }
 
+p {
+    font-size: var(--pfontsize);
+}
+
 html {
    scroll-behavior: smooth;
     display: inline;
@@ -37,10 +50,6 @@ header {
 
 section {
     scroll-margin-top: var(--navHeight);
-}
-
-footer {
-    height: var(--navHeight);
 }
 
 @media screen and (max-device-width: 750px) {
