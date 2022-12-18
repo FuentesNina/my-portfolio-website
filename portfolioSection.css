@@ -1,0 +1,47 @@
+section.portfolio {
+    height: 100vh;
+}
+
+section.portfolio h2 {
+    font-size: var(--h2fontsize);
+    margin: 1em;
+}
+
+section.portfolio p, section.portfolio button {
+    font-size: var(--pfontsize);
+    text-align: center;
+    margin: 0.5em;
+}
+
+.portfolio button {
+    border-radius: 25px;
+    padding: 0.5em;
+    padding-left: 1em;
+    padding-right: 1em;
+    border-style: solid;
+    font-weight: 600;
+    color: white;
+    background-color: var(--pink);
+    border-color: var(--pink);
+}
+
+.projectCard {
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+    border-style: solid;
+}
+
+div.projectHighlight img{
+    width: 100%;
+}
+
+.projectCarousel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 70vh;
+    align-items: center;
+}
