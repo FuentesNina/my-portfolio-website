@@ -1,0 +1,41 @@
+section.spacer{
+    content: '';
+    height: calc(var(--navHeight)/2);
+    background-color: white;
+}
+
+section.contact {
+    background: linear-gradient(var(--dark-blue), white);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: calc(var(--navHeight)/2);
+}
+
+section.contact h2 {
+    text-align: center;
+}
+
+section.contact a {
+    background-color: white;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    width: 60%;
+    margin: 2em auto;
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.30);
+    height: 4em;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
+
+section.contact svg {
+    height: 2em;
+    margin: auto;
+}
+
+section.contact p {
+    padding-right: 2em;
+    padding-left: 1em;
+}

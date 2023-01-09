@@ -7,8 +7,8 @@ section.portfolio {
     background-repeat: repeat;
     background-size: 20vh;
     background-attachment: fixed;
+    padding: var(--navHeight);
 }
-
 
 section.portfolio h2 {
     font-size: var(--h2fontsize);
@@ -29,8 +29,8 @@ section.portfolio p, section.portfolio button {
     border-style: solid;
     font-weight: 600;
     color: white;
-    background-color: var(--pink);
-    border-color: var(--pink);
+    background-color: var(--yellow);
+    border-color: var(--yellow);
 }
 
 .projectCard {
@@ -62,12 +62,10 @@ div.projectHighlight img{
 
 
 /* THIS IS FROM YOUTUBE VIDEO */
-
-
-  #slider {
+  div.slider {
     display: inline-block;
     width: 70%;
-    height: 100%;
+    /* height: 100%; */
     max-width: 50vw;
     display: flex;
     align-items: center;
