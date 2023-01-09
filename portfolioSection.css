@@ -1,0 +1,147 @@
+section.portfolio {
+    height: calc( 90vh - var(--navHeight));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./MediaFolder/backgroundTile.png);
+    background-repeat: repeat;
+    background-size: 20vh;
+    background-attachment: fixed;
+}
+
+
+section.portfolio h2 {
+    font-size: var(--h2fontsize);
+    margin: 1em;
+}
+
+section.portfolio p, section.portfolio button {
+    font-size: var(--pfontsize);
+    text-align: center;
+    margin: 0.5em;
+}
+
+.portfolio button {
+    border-radius: 25px;
+    padding: 0.5em;
+    padding-left: 1em;
+    padding-right: 1em;
+    border-style: solid;
+    font-weight: 600;
+    color: white;
+    background-color: var(--pink);
+    border-color: var(--pink);
+}
+
+.projectCard {
+    position: absolute;
+    transition: transform 400ms ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+    background: rgba( 255, 255, 255, 0.4 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 18.5px );
+    -webkit-backdrop-filter: blur( 18.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+div.projectHighlight img{
+    width: 100%;
+}
+
+.projectCarousel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/* THIS IS FROM YOUTUBE VIDEO */
+
+
+  #slider {
+    display: inline-block;
+    width: 70%;
+    height: 100%;
+    max-width: 600px;
+    display: flex;
+    align-items: center;
+    margin-top: var(--navHeight);
+    margin-bottom: var(--navHeight);
+    perspective: 100vw;
+    transform-style: preserve-3d;
+  }
+
+  input[type=radio] {
+    display: none;
+  }
+
+
+  /* Slider Functionality */
+
+  /* Active Slide */
+  #s1:checked ~ #slide1, #s2:checked ~ #slide2, #s3:checked ~ #slide3, #s4:checked ~ #slide4, #s5:checked ~ #slide5 {
+    box-shadow: 0 13px 26px rgba(0,0,0, 0.3), 0 12px 6px rgba(0,0,0, 0.2);
+    transform: translate3d(0%, 0, 0px);
+  }
+
+  /* Next Slide */
+  #s1:checked ~ #slide2, #s2:checked ~ #slide3, #s3:checked ~ #slide4, #s4:checked ~ #slide5, #s5:checked ~ #slide1 {
+    box-shadow: 0 6px 10px rgba(0,0,0, 0.3), 0 2px 2px rgba(0,0,0, 0.2);
+    transform: translate3d(15%, 0, -100px);
+  }
+
+
+  /* Next to Next Slide */
+  #s1:checked ~ #slide3, #s2:checked ~ #slide4, #s3:checked ~ #slide5, #s4:checked ~ #slide1, #s5:checked ~ #slide2 {
+    box-shadow: 0 1px 4px rgba(0,0,0, 0.4);
+    transform: translate3d(30%, 0, -250px);
+  }
+
+  /* Previous to Previous Slide */
+  #s1:checked ~ #slide4, #s2:checked ~ #slide5, #s3:checked ~ #slide1, #s4:checked ~ #slide2, #s5:checked ~ #slide3 {
+    box-shadow: 0 1px 4px rgba(0,0,0, 0.4);
+    transform: translate3d(-30%, 0, -250px);
+  }
+
+  /* Previous Slide */
+  #s1:checked ~ #slide5, #s2:checked ~ #slide1, #s3:checked ~ #slide2, #s4:checked ~ #slide3, #s5:checked ~ #slide4 {
+    box-shadow: 0 6px 10px rgba(0,0,0, 0.3), 0 2px 2px rgba(0,0,0, 0.2);
+    transform: translate3d(-15%, 0, -100px);
+  }
+
+
+  /* Responsive layout*/
+@media screen and (max-device-width: 900px) {
+      /* Slider Functionality */
+
+  /* Next Slide */
+  #s1:checked ~ #slide2, #s2:checked ~ #slide3, #s3:checked ~ #slide4, #s4:checked ~ #slide5, #s5:checked ~ #slide1 {
+    box-shadow: 0 6px 10px rgba(0,0,0, 0.3), 0 2px 2px rgba(0,0,0, 0.2);
+    transform: translate3d(0, 15%, -100px);
+  }
+
+
+  /* Next to Next Slide */
+  #s1:checked ~ #slide3, #s2:checked ~ #slide4, #s3:checked ~ #slide5, #s4:checked ~ #slide1, #s5:checked ~ #slide2 {
+    box-shadow: 0 1px 4px rgba(0,0,0, 0.4);
+    transform: translate3d(0, 30%, -250px);
+  }
+
+  /* Previous to Previous Slide */
+  #s1:checked ~ #slide4, #s2:checked ~ #slide5, #s3:checked ~ #slide1, #s4:checked ~ #slide2, #s5:checked ~ #slide3 {
+    box-shadow: 0 1px 4px rgba(0,0,0, 0.4);
+    transform: translate3d(0, -30%, -250px);
+  }
+
+  /* Previous Slide */
+  #s1:checked ~ #slide5, #s2:checked ~ #slide1, #s3:checked ~ #slide2, #s4:checked ~ #slide3, #s5:checked ~ #slide4 {
+    box-shadow: 0 6px 10px rgba(0,0,0, 0.3), 0 2px 2px rgba(0,0,0, 0.2);
+    transform: translate3d(0, -15%, -100px);
+  }
+}

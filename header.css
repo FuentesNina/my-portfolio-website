@@ -4,16 +4,19 @@ header {
     background-color: white;
     top: 0;
     width: 100%;
+    display: flex;
 }
 
 /*Desktop menu*/
 .header-mobile {
     display: none;
+    width: 100%;
 }
 
 .header-desktop {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    width: 100%;
 }
 
 .nav-scrolled {
@@ -29,6 +32,8 @@ header {
 
 .logo {
     width: 150px;
+    display: flex;
+    align-self: center;
 }
 
 .header-desktop ul {

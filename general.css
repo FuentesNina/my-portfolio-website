@@ -29,9 +29,9 @@
     --pfontsize: 25px;
 }
 
-p {
+/* p {
     font-size: var(--pfontsize);
-}
+} */
 
 html {
    scroll-behavior: smooth;
