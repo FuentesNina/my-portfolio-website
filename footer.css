@@ -5,14 +5,18 @@ footer {
     justify-content: space-around;
     color: white;
     align-items: center;
-    fill: white;
     padding-top: 1em;
     padding-bottom: 1em;
+}
+
+footer a{
+    text-decoration: none;
 }
 
 footer svg {
     width: calc(var(--navHeight) / 2);
     margin: 1em;
+    fill: white;
 }
 
 .footer_logo {
@@ -23,19 +27,23 @@ footer svg {
     font-family: 'tomatoesregular';
 }
 
-.quote p.author {
+p.author {
     display: none;
 }
 
 
 @media screen and (min-device-width: 800px) {
-    .quote p.author {
+    .quote {
+        display: flex;
+    }
+
+    p.author {
         display: block;
     }
 
-    footer {
+    /* footer {
         flex-direction: row;
-    }
+    } */
 
     .quote p{
         font-size: 12px;
