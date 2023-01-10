@@ -29,6 +29,8 @@ section.portfolio svg {
 svg#previous {
   transform: rotate(180deg);
   filter: drop-shadow(-3px -5px 2px rgb(0 0 0 / 0.4));
+  position: relative;
+  z-index: 1;
 }
 
 section.portfolio h2 {
