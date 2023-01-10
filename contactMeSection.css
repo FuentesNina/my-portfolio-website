@@ -61,7 +61,7 @@ div.Form {
     margin: 2em;
 }
 
-fieldset {
+form {
     font-size: var(--pfontsize);
     border-radius: 10px;
     background-color: white;
@@ -71,27 +71,27 @@ fieldset {
     box-shadow: 0.5em 0.5em 0.5em 0px rgba(0,0,0,0.30);
     align-items: center;
     padding: 1em;
-    /* margin: 1em auto; */
+    max-width: 600px;
 }
 
-fieldset button {
+form button {
     width: fit-content;
     font-size: var(--pfontsize);
 }
 
-fieldset h2 {
+form h2 {
     margin-bottom: 2em;
 }
 
-fieldset input,
-fieldset textarea {
+form input,
+form textarea {
     margin-bottom: 1em;
     padding: 0.5em;
     width: 70%;
     font-size: var(--pfontsize);
 }
 
-fieldset textarea {
+form textarea {
     height: 6em;
 }
 
@@ -108,9 +108,7 @@ fieldset textarea {
         display: block;
     }
 
-    a.Links {
+    a.Links, form {
         max-width: none;
     }
-
-
 }

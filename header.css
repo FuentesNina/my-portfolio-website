@@ -264,6 +264,7 @@ div.mobile_logo {
 
     .active-section p, .mobile-menu a {
         font-size: 40px;
+        font-size: var(--h2fontsize);
     }
 
     .mobile-menu li {

@@ -33,6 +33,20 @@ button.yellow {
     border-color: var(--yellow);
 }
 
+button.yellow:focus{
+  color: white;
+  background-color: var(--yellow);
+  border-color: var(--yellow);
+}
+
+@media (hover: hover) {
+  button.yellow:hover {
+    color: var(--yellow);
+    background-color: transparent;
+    border-color: var(--yellow);
+  }
+}
+
 .projectCard {
     position: absolute;
     transition: transform 400ms ease;

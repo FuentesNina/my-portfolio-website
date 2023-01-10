@@ -70,7 +70,7 @@ div.portrait {
 }
 
 div.portrait img {
-    height: 85vh;
+    max-height: 85vh;
     overflow: hidden;
 
 }
@@ -88,7 +88,9 @@ div.portrait img {
 @media screen and (max-width: 900px) {
     section.home {
         background: linear-gradient(white, var(--dark-blue));
-        display: inline-block;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
         width: 100%;
     }
 
@@ -96,7 +98,7 @@ div.portrait img {
         display: flex;
         align-items: center;
         margin: 0;
-        height: 35%;
+        max-height: 60%;
     }
 
     .home h1 {
@@ -122,7 +124,7 @@ div.portrait img {
     }
 
     div.portrait img {
-        height: 100%;
+        max-height: 100%;
     }
 }
 
@@ -130,7 +132,9 @@ div.portrait img {
 @media screen and (max-device-width: 970px) {
     section.home {
         background: linear-gradient(white, var(--dark-blue));
-        display: inline-block;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
         width: 100%;
     }
 
@@ -138,7 +142,7 @@ div.portrait img {
         display: flex;
         align-items: center;
         margin: 0;
-        height: 35%;
+        /* max-height: 70%; */
     }
 
     .home h1 {
@@ -163,14 +167,12 @@ div.portrait img {
     }
 
     div.portrait {
-        justify-content:center;
-        height: 65%;
+        justify-content: center;
         animation: transitionInPortraitMobile 2s;
     }
 
     div.portrait img {
-        height: 100%;
-
+        max-height: 100%;
     }
 }
 
