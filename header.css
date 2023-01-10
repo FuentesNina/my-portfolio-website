@@ -1,6 +1,7 @@
 /* Entire Navigation Bar Settings*/
 header {
     position: sticky;
+    z-index:100;
     background-color: white;
     top: 0;
     width: 100%;
@@ -223,7 +224,7 @@ div.mobile_logo {
 
 
 /* Mobile Menu*/
-@media screen and (max-device-width: 800px) {
+@media screen and (max-device-width: 750px) {
     .header-desktop {
         display: none;
     }
