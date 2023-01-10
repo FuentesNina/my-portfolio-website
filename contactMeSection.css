@@ -9,6 +9,8 @@ section.contact {
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: calc(var(--navHeight)/2);
+    min-height: calc(80vh - var(--navHeight));
+    align-items: center;
 }
 
 section.contact h2 {
@@ -72,6 +74,7 @@ form {
     align-items: center;
     padding: 1em;
     max-width: 600px;
+    /* margin: auto; */
 }
 
 form button {

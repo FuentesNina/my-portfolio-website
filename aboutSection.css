@@ -11,6 +11,7 @@ section.about {
     justify-content: center;
     align-items: center;
     margin: 2em;
+    margin-top: var(--navHeight);
 }
 
 .storySection .story {
@@ -196,6 +197,7 @@ p.languageTitle {
     .video {
         grid-area: video;
         align-self: center;
+        margin: 0;
     }
 }
 
