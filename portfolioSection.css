@@ -7,21 +7,21 @@ section.portfolio {
     background-repeat: repeat;
     background-size: 20vh;
     background-attachment: fixed;
+    padding: var(--navHeight);
 }
-
 
 section.portfolio h2 {
     font-size: var(--h2fontsize);
     margin: 1em;
 }
 
-section.portfolio p, section.portfolio button {
+section.portfolio p, button.yellow {
     font-size: var(--pfontsize);
     text-align: center;
     margin: 0.5em;
 }
 
-.portfolio button {
+button.yellow {
     border-radius: 25px;
     padding: 0.5em;
     padding-left: 1em;
@@ -29,8 +29,8 @@ section.portfolio p, section.portfolio button {
     border-style: solid;
     font-weight: 600;
     color: white;
-    background-color: var(--pink);
-    border-color: var(--pink);
+    background-color: var(--yellow);
+    border-color: var(--yellow);
 }
 
 .projectCard {
@@ -62,13 +62,11 @@ div.projectHighlight img{
 
 
 /* THIS IS FROM YOUTUBE VIDEO */
-
-
-  #slider {
+  div.slider {
     display: inline-block;
     width: 70%;
-    height: 100%;
-    max-width: 600px;
+    /* height: 100%; */
+    max-width: 50vw;
     display: flex;
     align-items: center;
     margin-top: var(--navHeight);
@@ -93,26 +91,26 @@ div.projectHighlight img{
   /* Next Slide */
   #s1:checked ~ #slide2, #s2:checked ~ #slide3, #s3:checked ~ #slide4, #s4:checked ~ #slide5, #s5:checked ~ #slide1 {
     box-shadow: 0 6px 10px rgba(0,0,0, 0.3), 0 2px 2px rgba(0,0,0, 0.2);
-    transform: translate3d(15%, 0, -100px);
+    transform: translate3d(30%, 0, -100px);
   }
 
 
   /* Next to Next Slide */
   #s1:checked ~ #slide3, #s2:checked ~ #slide4, #s3:checked ~ #slide5, #s4:checked ~ #slide1, #s5:checked ~ #slide2 {
     box-shadow: 0 1px 4px rgba(0,0,0, 0.4);
-    transform: translate3d(30%, 0, -250px);
+    transform: translate3d(60%, 0, -250px);
   }
 
   /* Previous to Previous Slide */
   #s1:checked ~ #slide4, #s2:checked ~ #slide5, #s3:checked ~ #slide1, #s4:checked ~ #slide2, #s5:checked ~ #slide3 {
     box-shadow: 0 1px 4px rgba(0,0,0, 0.4);
-    transform: translate3d(-30%, 0, -250px);
+    transform: translate3d(-60%, 0, -250px);
   }
 
   /* Previous Slide */
   #s1:checked ~ #slide5, #s2:checked ~ #slide1, #s3:checked ~ #slide2, #s4:checked ~ #slide3, #s5:checked ~ #slide4 {
     box-shadow: 0 6px 10px rgba(0,0,0, 0.3), 0 2px 2px rgba(0,0,0, 0.2);
-    transform: translate3d(-15%, 0, -100px);
+    transform: translate3d(-30%, 0, -100px);
   }
 
 
@@ -123,25 +121,25 @@ div.projectHighlight img{
   /* Next Slide */
   #s1:checked ~ #slide2, #s2:checked ~ #slide3, #s3:checked ~ #slide4, #s4:checked ~ #slide5, #s5:checked ~ #slide1 {
     box-shadow: 0 6px 10px rgba(0,0,0, 0.3), 0 2px 2px rgba(0,0,0, 0.2);
-    transform: translate3d(0, 15%, -100px);
+    transform: translate3d(0, 20%, -100px);
   }
 
 
   /* Next to Next Slide */
   #s1:checked ~ #slide3, #s2:checked ~ #slide4, #s3:checked ~ #slide5, #s4:checked ~ #slide1, #s5:checked ~ #slide2 {
     box-shadow: 0 1px 4px rgba(0,0,0, 0.4);
-    transform: translate3d(0, 30%, -250px);
+    transform: translate3d(0, 40%, -250px);
   }
 
   /* Previous to Previous Slide */
   #s1:checked ~ #slide4, #s2:checked ~ #slide5, #s3:checked ~ #slide1, #s4:checked ~ #slide2, #s5:checked ~ #slide3 {
     box-shadow: 0 1px 4px rgba(0,0,0, 0.4);
-    transform: translate3d(0, -30%, -250px);
+    transform: translate3d(0, -40%, -250px);
   }
 
   /* Previous Slide */
   #s1:checked ~ #slide5, #s2:checked ~ #slide1, #s3:checked ~ #slide2, #s4:checked ~ #slide3, #s5:checked ~ #slide4 {
     box-shadow: 0 6px 10px rgba(0,0,0, 0.3), 0 2px 2px rgba(0,0,0, 0.2);
-    transform: translate3d(0, -15%, -100px);
+    transform: translate3d(0, -20%, -100px);
   }
 }

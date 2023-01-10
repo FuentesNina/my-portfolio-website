@@ -21,6 +21,7 @@ section.about {
 .storySection video {
     border-radius: 25px;
     width: 90%;
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.30);
 }
 
 section.about h2 {

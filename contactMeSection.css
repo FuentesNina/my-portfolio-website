@@ -1,0 +1,116 @@
+section.spacer{
+    content: '';
+    height: calc(var(--navHeight)/2);
+    background-color: white;
+}
+
+section.contact {
+    background: linear-gradient(var(--dark-blue), white);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: calc(var(--navHeight)/2);
+}
+
+section.contact h2 {
+    text-align: center;
+    font-size: var(--h2fontsize);
+    margin-top: 1em;
+    margin-bottom: 2em;
+}
+
+a.Links {
+    background-color: white;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    margin: 2em auto;
+    box-shadow: 0.5em 0.5em 0.5em 0px rgba(0,0,0,0.30);
+    padding: 1em;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    max-width: 300px;
+    font-size: var(--pfontsize);
+}
+
+section.contact svg {
+    height: 2em;
+    margin: auto;
+}
+
+section.contact p {
+    padding-right: 2em;
+    padding-left: 1em;
+}
+
+div.contactInfo {
+    /* width: 60%; */
+    margin: 3em auto;
+
+}
+
+div.contactInfo a,
+div.contactInfo ul {
+    color: black;
+    list-style: none;
+    font-size: var(--pfontsize);
+}
+
+div.Form {
+    margin: 2em;
+}
+
+fieldset {
+    font-size: var(--pfontsize);
+    border-radius: 10px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    border-style: none;
+    box-shadow: 0.5em 0.5em 0.5em 0px rgba(0,0,0,0.30);
+    align-items: center;
+    padding: 1em;
+    /* margin: 1em auto; */
+}
+
+fieldset button {
+    width: fit-content;
+    font-size: var(--pfontsize);
+}
+
+fieldset h2 {
+    margin-bottom: 2em;
+}
+
+fieldset input,
+fieldset textarea {
+    margin-bottom: 1em;
+    padding: 0.5em;
+    width: 70%;
+    font-size: var(--pfontsize);
+}
+
+fieldset textarea {
+    height: 6em;
+}
+
+/* Desktop Responsive */
+@media screen and (max-width:900px) {
+    section.contact {
+        display: block;
+    }
+}
+
+/* Mobile Responsive */
+@media screen and (max-device-width: 900px) {
+    section.contact {
+        display: block;
+    }
+
+    a.Links {
+        max-width: none;
+    }
+
+
+}
